@@ -1,14 +1,17 @@
-body {
+.page {
   margin: 0;
   min-width: 960px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.dark-theme {
   color: #f2f2f2;
   background-color: #080208;
   background-image: url("img/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .container {
@@ -165,6 +168,13 @@ body {
   color: #ffffff;
 }
 
+.changeTheme {
+  font-size: 16px;
+  border-radius: 20px;
+  color: white;
+  background-color: #fea18d;
+  cursor: pointer;
+}
 .page-footer {
   padding: 40px 0;
   background-color: #260c26;
@@ -186,4 +196,41 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone.svg");
+}
+
+.light-theme {
+  color: #222222;
+  background-color: #f2f4f6;
+  background-image: url("img/hero-bg-light.jpg");
+}
+
+.light-theme .page-header a {
+  color: #288be6;
+}
+
+.light-theme .level {
+  background-color: #ffffff;
+  border: 1px solid #86c3fa;
+}
+
+
+.light-theme .level div {
+  background-color: #288be6;
+}
+
+.light-theme .button {
+  background-color: #288be6;
+  color: #ffffff;
+}
+
+.light-theme .page-footer {
+  background-color: #00417d;
+}
+
+.light-theme .page-footer a {
+  color: #ffffff;
+}
+
+.light-theme .changeTheme {
+  background-color: #288be6;
 }
