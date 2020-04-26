@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
   margin: 0;
   min-width: 960px;
@@ -176,6 +180,35 @@
   cursor: pointer;
   outline: none;
 }
+
+.up-button {
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 75px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  display: none;
+  transition: 0.5s;
+}
+
+.up-button:hover {
+  font-style: white;
+  background-color: #fea18d;
+}
+
+.shown {
+  display: inline;
+}
+
 .page-footer {
   padding: 40px 0;
   background-color: #260c26;
@@ -234,4 +267,13 @@
 
 .light-theme .changeTheme {
   background-color: #288be6;
+}
+
+.light-theme .up-button {
+  color: white;
+  background-color: black;
+}
+
+.light-theme .up-button:hover {
+  background-color: #328be6;
 }
